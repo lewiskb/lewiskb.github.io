@@ -75,13 +75,13 @@ Service detection performed. Please report any incorrect results at https://nmap
 
 The web application advertises a way to upload a CIF file for analysis. It was possible to register a new account to view the dashboard.
 
-![d02f3afde1aef4ce7ad406ac48bc90b3.png](../../screenshots/d02f3afde1aef4ce7ad406ac48bc90b3.png)
+![d02f3afde1aef4ce7ad406ac48bc90b3.png](/assets/img/d02f3afde1aef4ce7ad406ac48bc90b3.png)
 
 # Inspecting Dashboard
 
 The dashboard presents an upload form to submit the CIF file for analysis. It also provides a link to download an example CIF file for reference. After uploading a CIF file it allows you to view or delete it.
 
-![7e2b18cdce3238cfd8676ae2a31703c9.png](../../screenshots/7e2b18cdce3238cfd8676ae2a31703c9.png)
+![7e2b18cdce3238cfd8676ae2a31703c9.png](/assets/img/7e2b18cdce3238cfd8676ae2a31703c9.png)
 
 # Arbitrary Code Execution - pymatgen
 
@@ -95,7 +95,7 @@ A critical security vulnerability exists in the JonesFaithfulTransformation.from
 
 I used the POC and changed the payload to curl a file containing a bash reverse shell which will be piped into bash. Below is a screenshot of the payload.
 
-![a05b4d971b5d04d7087460dc240272f8.png](../../screenshots/a05b4d971b5d04d7087460dc240272f8.png)
+![a05b4d971b5d04d7087460dc240272f8.png](/assets/img/a05b4d971b5d04d7087460dc240272f8.png)
 
 # Testing Payload
 
@@ -105,19 +105,19 @@ The payload was updated and after clicking view to load the CIF file analysis a 
 
 Screenshot of the web server showing the GET request to download the reverse shell payload.
 
-![f9cea255d75866d66dc44b3f3da7300a.png](../../screenshots/f9cea255d75866d66dc44b3f3da7300a.png)
+![f9cea255d75866d66dc44b3f3da7300a.png](/assets/img/f9cea255d75866d66dc44b3f3da7300a.png)
 
 ### Netcat Listener
 
 Screenshot of listener showing no call-back. The second stage failed.
 
-![32e26745bf260397870ec7adef532d27.png](../../screenshots/32e26745bf260397870ec7adef532d27.png)
+![32e26745bf260397870ec7adef532d27.png](/assets/img/32e26745bf260397870ec7adef532d27.png)
 
 ### Reverse Shell Payload
 
 Screenshot of the reverse shell payload.
 
-![f1cc9abd796e9485fde16d8e93187996.png](../../screenshots/f1cc9abd796e9485fde16d8e93187996.png)
+![f1cc9abd796e9485fde16d8e93187996.png](/assets/img/f1cc9abd796e9485fde16d8e93187996.png)
 
 # Modifying Payload
 
@@ -135,7 +135,7 @@ Eventually I found a solution which involved writing the payload to disk, granti
 
 Screenshot showing a call-back on the netcat listener. Reverse shell obtained as the app user.
 
-![af7bdd6d0a0b2a66666acb6d4b71288f.png](../../screenshots/af7bdd6d0a0b2a66666acb6d4b71288f.png)
+![af7bdd6d0a0b2a66666acb6d4b71288f.png](/assets/img/af7bdd6d0a0b2a66666acb6d4b71288f.png)
 
 # Inspecting SQLite Database
 
@@ -232,7 +232,7 @@ rosa@chemistry:~$
 
 Netstat returned a service running on port 8080 locally which is interesting. After curling the service it revealed a web application is active on that port.
 
-![198f8ae11cef5519e6be21f2c37dcf7f.png](../../screenshots/198f8ae11cef5519e6be21f2c37dcf7f.png)
+![198f8ae11cef5519e6be21f2c37dcf7f.png](/assets/img/198f8ae11cef5519e6be21f2c37dcf7f.png)
 
 # Creating Port Forward to 8080
 
@@ -247,7 +247,7 @@ SSH was used to create a port forward to the local service so I could investigat
 
 Accessing the web service with Firefox showed it was some kind of monitoring application which lists services. Most of the features were not implemented. The only functional part of the web application was the list services feature.
 
-![46d7df8fad46612a8641752f0f3f3b8d.png](../../screenshots/46d7df8fad46612a8641752f0f3f3b8d.png)
+![46d7df8fad46612a8641752f0f3f3b8d.png](/assets/img/46d7df8fad46612a8641752f0f3f3b8d.png)
 
 # Inspecting List Services
 
@@ -274,7 +274,7 @@ Priority: u=0
 
 Screenshot of request and response in full.
 
-![a7e6582832bb7a46e89a7e42abeee9d0.png](../../screenshots/a7e6582832bb7a46e89a7e42abeee9d0.png)
+![a7e6582832bb7a46e89a7e42abeee9d0.png](/assets/img/a7e6582832bb7a46e89a7e42abeee9d0.png)
 
 # Inspecting Hash
 
@@ -311,16 +311,16 @@ CVE-2024-23334, a critical vulnerability discovered in aiohttp, a popular asynch
 
 Screenshot showing root flag being exposed using the directory traversal vulnerability.
 
-![f43b4e712d72e7c3b406932a230849ae.png](../../screenshots/f43b4e712d72e7c3b406932a230849ae.png)
+![f43b4e712d72e7c3b406932a230849ae.png](/assets/img/f43b4e712d72e7c3b406932a230849ae.png)
 
 ### Reading Root SSH Key
 
 Screenshot showing root key being exposed using the directory traversal vulnerability.
 
-![8b8e24f9aad2121a32d5cb883406a43a.png](../../screenshots/8b8e24f9aad2121a32d5cb883406a43a.png)
+![8b8e24f9aad2121a32d5cb883406a43a.png](/assets/img/8b8e24f9aad2121a32d5cb883406a43a.png)
 
 # Root Access Obtained
 
 Root access obtained via SSH using the key.
 
-![fd4c7e72b12c14106ce6774f1b5ab16a.png](../../screenshots/fd4c7e72b12c14106ce6774f1b5ab16a.png)
+![fd4c7e72b12c14106ce6774f1b5ab16a.png](/assets/img/fd4c7e72b12c14106ce6774f1b5ab16a.png)
