@@ -32,12 +32,12 @@ Service detection performed. Please report any incorrect results at https://nmap
 # Inspecting port 80 - http://tickets.keeper.htb/rt/
 nginx is hosting an application called Request Tracker 4.4.4. Default credentials allowed access to the admin account.
 
-![e9cdb1b34e365d964d5f79976ce8c03d.png](../_resources/e9cdb1b34e365d964d5f79976ce8c03d.png)
+![e9cdb1b34e365d964d5f79976ce8c03d.png](/assets/img/e9cdb1b34e365d964d5f79976ce8c03d.png)
 
 # Discovering user credentials
 User credentials discovered in the users profile.
 
-![3f887204704d923cc6f79a9b001656c9.png](../_resources/3f887204704d923cc6f79a9b001656c9.png)
+![3f887204704d923cc6f79a9b001656c9.png](/assets/img/3f887204704d923cc6f79a9b001656c9.png)
 
 # SSH - lnorgaard
 User credentials allowed SSH access.
@@ -120,7 +120,7 @@ This seems to fit the pattern if possible passwords. The password should either 
 # Accessing KeePass vault
 The password was correct and opened the vault exposing a password and a Putty SSH key.
 
-![da312e074a621f842760f6536e049026.png](../_resources/da312e074a621f842760f6536e049026.png)
+![da312e074a621f842760f6536e049026.png](/assets/img/da312e074a621f842760f6536e049026.png)
 
 # Converting Putty key to OpenSSH
 `puttygen.exe > Import Key > Export OpenSSH key`

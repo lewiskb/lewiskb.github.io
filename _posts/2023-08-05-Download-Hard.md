@@ -31,7 +31,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 ```
 
 # Inspecting port 80 - http://download.htb
-![2e88b26554215ac47bcf8c983c16bfc2.png](/assets/img//2e88b26554215ac47bcf8c983c16bfc2.png)
+![2e88b26554215ac47bcf8c983c16bfc2.png](/assets/img/2e88b26554215ac47bcf8c983c16bfc2.png)
 
 ## Register Request
 Registering a new user does not expose any API subdomains or accessible endpoints. It also does not expose any parameters of interest which could be vulnerable to mass assignments.
@@ -245,7 +245,7 @@ After adding the generated cookies into Firefox's session storage it exposed all
 
 The names of the private files were no different to the public files which strongly suggested all the files were not very interesting.
 
-![0bbc5a528170bec14cfbcabc8623dbdc.png](/assets/img//0bbc5a528170bec14cfbcabc8623dbdc-1.png)
+![0bbc5a528170bec14cfbcabc8623dbdc.png](/assets/img/0bbc5a528170bec14cfbcabc8623dbdc-1.png)
 
 # Boolean Injection - Prisma Client
 Prisma client is a query builder which can interact with a database. Using the file disclosure vulnerability it was not possible to find any `.env` or `prisma.schema` files.
