@@ -245,7 +245,7 @@ After adding the generated cookies into Firefox's session storage it exposed all
 
 The names of the private files were no different to the public files which strongly suggested all the files were not very interesting.
 
-![0bbc5a528170bec14cfbcabc8623dbdc.png](/assets/img/0bbc5a528170bec14cfbcabc8623dbdc-1.png)
+![0bbc5a528170bec14cfbcabc8623dbdc.png](/assets/img/0bbc5a528170bec14cfbcabc8623dbdc.png)
 
 # Boolean Injection - Prisma Client
 Prisma client is a query builder which can interact with a database. Using the file disclosure vulnerability it was not possible to find any `.env` or `prisma.schema` files.
