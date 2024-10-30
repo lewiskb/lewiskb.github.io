@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Chemistry - Medium
+title: Chemistry - Easy - Linux
 date: 19-10-2024
-categories: [CTF]
+categories: [CTF - HackTheBox]
 tag: [pymatgen, RCE, CIF, Tunneling]
 ---
 
