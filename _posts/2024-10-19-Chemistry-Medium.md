@@ -4,6 +4,7 @@ title: Chemistry - Easy - Linux
 date: 19-10-2024
 categories: [CTF - HackTheBox]
 tag: [pymatgen, RCE, CIF, Tunneling]
+published: false
 ---
 
 # Nmap Scan
