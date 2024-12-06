@@ -175,7 +175,7 @@ sqlite>
 
 To narrow down hashes of interest I checked the `/etc/passwd` file for existing users to cross reference them with the database.
 
-```
+```console
 app@chemistry:~$ cat /etc/passwd | grep sh
 cat /etc/passwd | grep sh
 root:x:0:0:root:/root:/bin/bash
