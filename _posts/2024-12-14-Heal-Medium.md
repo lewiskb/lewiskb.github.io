@@ -1,8 +1,7 @@
-
 ---
 layout: post
 title: Heal - Medium - Linux
-date: 19-10-2024
+date: 14-12-2024
 categories: [CTF - HackTheBox]
 tag: [Consul, File Disclosure, LimeSurvey, Ruby, Rails, Password Reuse, SQLite]
 ---
