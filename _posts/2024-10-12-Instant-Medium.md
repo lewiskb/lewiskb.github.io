@@ -153,7 +153,7 @@ The discovered keys granted access as the user `shirohige`. User flag captured.
 
 # Solar-Putty Backup File
 
-Solar-Putty appears to be a SolarWinds product to manage remote sessions. The backup file will likely contain something of value. After decoding the file it appears to be encrypted. After looking around for a while I discovered a project on GitHub which can decrypt the contents. 
+Solar-Putty is a SolarWinds product that provides a solution to manage remote sessions. The backup file will likely contain something of value. After decoding the file it appears to be encrypted. After looking around for a while I discovered a project on GitHub which can decrypt the contents. 
 
 Source: https://github.com/VoidSec/SolarPuttyDecrypt
 
