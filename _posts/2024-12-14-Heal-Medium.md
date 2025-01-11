@@ -34,7 +34,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 
 # Subdomain Scan
 
-Fuzzing for subdomains was successful and uncovered `api.heal.htb`. The hosts file was updated so it resolves
+Fuzzing for subdomains was successful and uncovered `api.heal.htb`. The hosts file was updated so it resolves correctly.
 
 ```console
 ┌──(kali㉿kali)-[~/hackthebox/heal]
@@ -55,13 +55,13 @@ ID           Response   Lines    Word       Chars       Payload
 
 # Inspecting Port 80
 
-The web application offers a solution to create resumes. There is a registration page which was functional. After creating a new account a token was generated which requires to be passed in the headers of the request.
+The web application offers a solution to create resumes. There is a registration page which is functional. After creating a new account a token was generated.
 
 ![0ece325b9fcccb34b76a4eaf0078fc3b.png](/assets/img/0ece325b9fcccb34b76a4eaf0078fc3b.png)
 
 # Inspecting Registration Process
 
-The below snippet shows the full request used to register. It expects a POST request that contains parameters formatted in JSON.
+The below snippet shows the full request to register. It expects a POST request that contains parameters formatted in JSON.
 
 ### Request
 
@@ -113,7 +113,7 @@ vary: Origin
 
 # Inspecting Web Application (Authenticated)
 
-After authenticating the web application displayed a restricted endpoint.  There are now a number of new endpoints to test further which have been outlined below.
+After authenticating the web application displayed a restricted endpoint.  There are now various new endpoints to test further which have been outlined below.
 
 ### Endpoints of Interest:
 
@@ -127,7 +127,7 @@ After authenticating the web application displayed a restricted endpoint.  There
 
 The profile endpoint displays the properties of the users account. One of those properties shows if the users account is flagged as an admin. This is a strong indication that it will be worth while to test for mass assignment vulnerabilities in the registration and sign-in process.
 
-Other test to consider on this page would be service side template injection and cross site scripting.
+Other test to consider on this page would be server side template injection and cross site scripting.
 
 Tested Attacks:
 
@@ -150,7 +150,7 @@ LimeSurvey is a free and open-source online survey platform. Link to project:
 
 https://github.com/LimeSurvey/LimeSurvey
 
-The index page exposes the administrators username/email which can have several uses and worth taking note of. 
+The index page displays the administrators username/email which can have several uses and worth taking note of. 
 
 ![97a2d300cf392b982e30b37c6a509fd4.png](/assets/img/97a2d300cf392b982e30b37c6a509fd4.png)
 
@@ -170,7 +170,7 @@ The release notes document was accessible as shown below. `Version 6.6.4` is ins
 
 # Exports
 
-The exports endpoint converts the user input into a PDF in the format of a resume. The file download process may have a file disclosure vulnerability. 
+The exports endpoint converts the user input into a PDF in the format of a resume. The file download function may have a file disclosure vulnerability. 
 
 ### Request of Interest:
 
@@ -336,7 +336,7 @@ Reference: https://github.com/Y1LD1R1M-1337/Limesurvey-RCE
 
 ### Step 1: Creating Plugin ZIP
 
-The plug-in expects an XML file with the configuration settings. It was necessary to update the file to include version 6.0 onwards within the compatibility settings. Failure to do so will result in a failed installation. The PHP file which would typically include the functionality of the plug-in but for this situation it has been replaced with a reverse shell.
+The plug-in expects an XML file with the configuration settings. It was necessary to update the file to include version 6.0 onwards within the compatibility settings. Failure to do so will result in a failed installation. The PHP file would typically contain the functionality of the plug-in but for this situation it has been replaced with a reverse shell.
 
 ```console
 ┌──(kali㉿kali)-[~/hackthebox/heal/plugin]
